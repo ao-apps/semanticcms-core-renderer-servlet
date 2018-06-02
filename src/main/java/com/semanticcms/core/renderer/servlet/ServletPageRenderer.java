@@ -29,6 +29,7 @@ import java.io.Writer;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.jsp.SkipPageException;
 
 public interface ServletPageRenderer extends PageRenderer {
 
@@ -41,5 +42,5 @@ public interface ServletPageRenderer extends PageRenderer {
 		HttpServletRequest request,
 		HttpServletResponse response,
 		Writer out
-	) throws IOException, ServletException;
+	) throws IOException, ServletException, SkipPageException;
 }
