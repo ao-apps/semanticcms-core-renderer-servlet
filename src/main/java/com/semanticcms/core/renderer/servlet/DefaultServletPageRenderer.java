@@ -29,6 +29,7 @@ import java.util.Map;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.jsp.SkipPageException;
 
 public abstract class DefaultServletPageRenderer implements ServletPageRenderer {
 
@@ -50,6 +51,8 @@ public abstract class DefaultServletPageRenderer implements ServletPageRenderer 
 			doRenderer(page, request, response, out);
 		} catch(ServletException e) {
 			throw new IOException(e);
+		} catch(SkipPageException e) {
+			// Do nothing, this is a valid way for the renderer to complete
 		}
 	}
 
@@ -59,5 +62,5 @@ public abstract class DefaultServletPageRenderer implements ServletPageRenderer 
 		HttpServletRequest request,
 		HttpServletResponse response,
 		Writer out
-	) throws IOException, ServletException;
+	) throws IOException, ServletException, SkipPageException;
 }
