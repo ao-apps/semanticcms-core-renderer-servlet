@@ -36,7 +36,7 @@ public interface ServletPageRenderer extends PageRenderer {
 	String REQUEST_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".request";
 	String RESPONSE_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".response";
 
-	// TODO: Java 1.8: default methods instead of separate DefaultServletRenderer class
+	// Java 1.8: default methods instead of separate DefaultServletRenderer class
 	void doRenderer(
 		Page page,
 		HttpServletRequest request,
