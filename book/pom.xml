@@ -35,8 +35,6 @@ along with semanticcms-core-renderer-servlet.  If not, see <http://www.gnu.org/l
 	<properties>
 		<!-- These values are copied from the project being documented -->
 		<documented.artifactId>semanticcms-core-renderer-servlet</documented.artifactId>
-		<documented.javaVersion>1.8</documented.javaVersion>
-		<documented.javac.link.javaApi>${javac.link.javaApi.jdk8}</documented.javac.link.javaApi>
 		<documented.name>SemanticCMS Core Renderer Servlet²</documented.name>
 		<documented.shortTitle>Servlet</documented.shortTitle>
 		<documented.description>Support for SemanticCMS pages rendered in a Servlet environment.</documented.description>
