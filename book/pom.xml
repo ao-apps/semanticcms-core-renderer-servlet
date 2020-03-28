@@ -54,6 +54,11 @@ along with semanticcms-core-renderer-servlet.  If not, see <http://www.gnu.org/l
 		<tag>HEAD</tag>
 	</scm>
 
+	<issueManagement>
+		<system>GitHub Issues</system>
+		<url>https://github.com/aoindustries/semanticcms-core-renderer-servlet/issues</url>
+	</issueManagement>
+
 	<dependencyManagement>
 		<dependencies>
 			<!-- Java EE -->
