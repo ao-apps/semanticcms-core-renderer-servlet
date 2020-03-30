@@ -47,7 +47,6 @@ along with semanticcms-core-renderer-servlet.  If not, see <http://www.gnu.org/l
 	<inceptionYear>2017</inceptionYear>
 
 	<scm>
-		<!-- Can't inherit due to multi-module -->
 		<connection>scm:git:git://github.com/aoindustries/semanticcms-core-renderer-servlet.git</connection>
 		<developerConnection>scm:git:git@github.com:aoindustries/semanticcms-core-renderer-servlet.git</developerConnection>
 		<url>https://github.com/aoindustries/semanticcms-core-renderer-servlet</url>
