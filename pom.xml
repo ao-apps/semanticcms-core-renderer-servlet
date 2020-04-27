@@ -72,7 +72,7 @@ along with semanticcms-core-renderer-servlet.  If not, see <http://www.gnu.org/l
 								<link>${javadoc.link.javaee}</link>
 								<!-- Direct -->
 								<link>https://semanticcms.com/core/model/apidocs/</link>
-								<link>https://semanticcms.com/core/renderer/apidocs/</link>
+								<!-- TODO: Once published: <link>https://semanticcms.com/core/renderer/apidocs/</link> -->
 							</links>
 						</configuration>
 					</plugin>
