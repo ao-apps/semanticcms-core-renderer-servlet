@@ -1,6 +1,6 @@
 /*
  * semanticcms-core-renderer-servlet - Support for SemanticCMS pages rendered in a Servlet environment.
- * Copyright (C) 2018  AO Industries, Inc.
+ * Copyright (C) 2018, 2021  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -34,9 +34,9 @@ import javax.servlet.jsp.SkipPageException;
 public abstract class DefaultServletPageRenderer implements ServletPageRenderer {
 
 	private final Page page;
-	private final Map<String,? extends Object> attributes;
+	private final Map<String, ? extends Object> attributes;
 
-	public DefaultServletPageRenderer(Page page, Map<String,? extends Object> attributes) {
+	public DefaultServletPageRenderer(Page page, Map<String, ? extends Object> attributes) {
 		this.page = page;
 		this.attributes = attributes;
 	}
