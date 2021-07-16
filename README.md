@@ -10,6 +10,12 @@
 
 [![Build](https://github.com/aoindustries/semanticcms-core-renderer-servlet/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/semanticcms-core-renderer-servlet/actions?query=workflow%3ABuild)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-core-renderer-servlet/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.semanticcms/semanticcms-core-renderer-servlet)
+[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=alert_status)](https://sonarcloud.io/dashboard?branch=master&id=com.semanticcms%3Asemanticcms-core-renderer-servlet)
+[![Lines of Code](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=ncloc)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=ncloc)  
+[![Reliability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=reliability_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=Reliability)
+[![Security Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=security_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=Security)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=sqale_rating)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=Maintainability)
+[![Coverage](https://sonarcloud.io/api/project_badges/measure?branch=master&project=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=coverage)](https://sonarcloud.io/component_measures?branch=master&id=com.semanticcms%3Asemanticcms-core-renderer-servlet&metric=Coverage)
 
 Support for [SemanticCMS pages](https://github.com/aoindustries/semanticcms-core-pages) rendered in a Servlet environment.
 
