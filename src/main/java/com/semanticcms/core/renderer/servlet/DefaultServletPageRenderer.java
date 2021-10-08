@@ -36,7 +36,7 @@ public abstract class DefaultServletPageRenderer implements ServletPageRenderer 
 	private final Page page;
 	private final Map<String, ? extends Object> attributes;
 
-	public DefaultServletPageRenderer(Page page, Map<String, ? extends Object> attributes) {
+	protected DefaultServletPageRenderer(Page page, Map<String, ? extends Object> attributes) {
 		this.page = page;
 		this.attributes = attributes;
 	}
