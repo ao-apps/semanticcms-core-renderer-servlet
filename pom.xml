@@ -101,9 +101,6 @@ along with semanticcms-core-renderer-servlet.  If not, see <https://www.gnu.org/
 			<releases>
 				<enabled>false</enabled>
 			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</repository>
 	</repositories>
 
