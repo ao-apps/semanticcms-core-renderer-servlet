@@ -34,34 +34,38 @@ import javax.servlet.jsp.SkipPageException;
 
 public abstract class DefaultServletPageRenderer implements ServletPageRenderer {
 
-	private final Page page;
-	private final Map<String, ? extends Object> attributes;
+  private final Page page;
+  private final Map<String, ? extends Object> attributes;
 
-	protected DefaultServletPageRenderer(Page page, Map<String, ? extends Object> attributes) {
-		this.page = page;
-		this.attributes = attributes;
-	}
+  protected DefaultServletPageRenderer(Page page, Map<String, ? extends Object> attributes) {
+    this.page = page;
+    this.attributes = attributes;
+  }
 
-	@Override
-	public void doRenderer(Writer out) throws IOException {
-		try {
-			HttpServletRequest request = (HttpServletRequest)attributes.get(REQUEST_RENDERER_ATTRIBUTE);
-			if(request == null) throw new ServletException("Page attribute not found: " + REQUEST_RENDERER_ATTRIBUTE);
-			HttpServletResponse response = (HttpServletResponse)attributes.get(RESPONSE_RENDERER_ATTRIBUTE);
-			if(response == null) throw new ServletException("Page attribute not found: " + RESPONSE_RENDERER_ATTRIBUTE);
-			doRenderer(page, request, response, out);
-		} catch(ServletException e) {
-			throw new IOException(e);
-		} catch(SkipPageException e) {
-			// Do nothing, this is a valid way for the renderer to complete
-		}
-	}
+  @Override
+  public void doRenderer(Writer out) throws IOException {
+    try {
+      HttpServletRequest request = (HttpServletRequest)attributes.get(REQUEST_RENDERER_ATTRIBUTE);
+      if (request == null) {
+        throw new ServletException("Page attribute not found: " + REQUEST_RENDERER_ATTRIBUTE);
+      }
+      HttpServletResponse response = (HttpServletResponse)attributes.get(RESPONSE_RENDERER_ATTRIBUTE);
+      if (response == null) {
+        throw new ServletException("Page attribute not found: " + RESPONSE_RENDERER_ATTRIBUTE);
+      }
+      doRenderer(page, request, response, out);
+    } catch (ServletException e) {
+      throw new IOException(e);
+    } catch (SkipPageException e) {
+      // Do nothing, this is a valid way for the renderer to complete
+    }
+  }
 
-	@Override
-	public abstract void doRenderer(
-		Page page,
-		HttpServletRequest request,
-		HttpServletResponse response,
-		Writer out
-	) throws IOException, ServletException, SkipPageException;
+  @Override
+  public abstract void doRenderer(
+    Page page,
+    HttpServletRequest request,
+    HttpServletResponse response,
+    Writer out
+  ) throws IOException, ServletException, SkipPageException;
 }

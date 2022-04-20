@@ -34,14 +34,14 @@ import javax.servlet.jsp.SkipPageException;
 
 public interface ServletPageRenderer extends PageRenderer {
 
-	String REQUEST_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".request";
-	String RESPONSE_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".response";
+  String REQUEST_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".request";
+  String RESPONSE_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".response";
 
-	// Java 1.8: default methods instead of separate DefaultServletRenderer class
-	void doRenderer(
-		Page page,
-		HttpServletRequest request,
-		HttpServletResponse response,
-		Writer out
-	) throws IOException, ServletException, SkipPageException;
+  // Java 1.8: default methods instead of separate DefaultServletRenderer class
+  void doRenderer(
+    Page page,
+    HttpServletRequest request,
+    HttpServletResponse response,
+    Writer out
+  ) throws IOException, ServletException, SkipPageException;
 }
