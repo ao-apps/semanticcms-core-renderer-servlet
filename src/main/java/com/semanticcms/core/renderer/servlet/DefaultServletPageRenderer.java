@@ -45,11 +45,11 @@ public abstract class DefaultServletPageRenderer implements ServletPageRenderer 
   @Override
   public void doRenderer(Writer out) throws IOException {
     try {
-      HttpServletRequest request = (HttpServletRequest)attributes.get(REQUEST_RENDERER_ATTRIBUTE);
+      HttpServletRequest request = (HttpServletRequest) attributes.get(REQUEST_RENDERER_ATTRIBUTE);
       if (request == null) {
         throw new ServletException("Page attribute not found: " + REQUEST_RENDERER_ATTRIBUTE);
       }
-      HttpServletResponse response = (HttpServletResponse)attributes.get(RESPONSE_RENDERER_ATTRIBUTE);
+      HttpServletResponse response = (HttpServletResponse) attributes.get(RESPONSE_RENDERER_ATTRIBUTE);
       if (response == null) {
         throw new ServletException("Page attribute not found: " + RESPONSE_RENDERER_ATTRIBUTE);
       }
@@ -63,9 +63,9 @@ public abstract class DefaultServletPageRenderer implements ServletPageRenderer 
 
   @Override
   public abstract void doRenderer(
-    Page page,
-    HttpServletRequest request,
-    HttpServletResponse response,
-    Writer out
+      Page page,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      Writer out
   ) throws IOException, ServletException, SkipPageException;
 }

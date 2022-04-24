@@ -39,9 +39,9 @@ public interface ServletPageRenderer extends PageRenderer {
 
   // Java 1.8: default methods instead of separate DefaultServletRenderer class
   void doRenderer(
-    Page page,
-    HttpServletRequest request,
-    HttpServletResponse response,
-    Writer out
+      Page page,
+      HttpServletRequest request,
+      HttpServletResponse response,
+      Writer out
   ) throws IOException, ServletException, SkipPageException;
 }
