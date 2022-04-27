@@ -27,4 +27,4 @@ module com.semanticcms.core.renderer.servlet {
   requires javax.servlet.jsp.api; // <groupId>javax.servlet.jsp</groupId><artifactId>javax.servlet.jsp-api</artifactId>
   requires com.semanticcms.core.model; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-model</artifactId>
   requires com.semanticcms.core.renderer; // <groupId>com.semanticcms</groupId><artifactId>semanticcms-core-renderer</artifactId>
-}
+} // TODO: Avoiding rewrite-maven-plugin-4.22.2 truncation
