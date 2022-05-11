@@ -32,6 +32,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.jsp.SkipPageException;
 
+/**
+ * Renders {@linkplain Page pages} in a Servlet environment.
+ */
 public interface ServletPageRenderer extends PageRenderer {
 
   String REQUEST_RENDERER_ATTRIBUTE = ServletPageRenderer.class.getName() + ".request";
