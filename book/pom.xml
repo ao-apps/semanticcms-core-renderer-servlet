@@ -36,15 +36,15 @@ along with semanticcms-core-renderer-servlet.  If not, see <https://www.gnu.org/
     <module.name>com.semanticcms.core.renderer.servlet.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>semanticcms-core-renderer-servlet</documented.artifactId>
-    <documented.name>SemanticCMS Core Renderer Servlet²</documented.name>
+    <documented.name>SemanticCMS Core Renderer Servlet</documented.name>
     <documented.description>Support for SemanticCMS pages rendered in a Servlet environment.</documented.description>
 
     <description.html><![CDATA[Documentation for <a target="${javadoc.target}" href="${project.url}">${documented.name}</a> in <a target="${javadoc.target}" href="https://semanticcms.com/">SemanticCMS</a> format.]]></description.html>
   </properties>
 
-  <name>SemanticCMS Core Renderer Servlet² Book</name>
+  <name>SemanticCMS Core Renderer Servlet Book</name>
   <url>https://semanticcms.com/core/renderer/servlet/</url>
-  <description>Documentation for SemanticCMS Core Renderer Servlet² in SemanticCMS format.</description>
+  <description>Documentation for SemanticCMS Core Renderer Servlet in SemanticCMS format.</description>
   <inceptionYear>2017</inceptionYear>
 
   <licenses>
