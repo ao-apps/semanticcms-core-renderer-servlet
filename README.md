@@ -23,7 +23,7 @@ Support for [SemanticCMS pages](https://github.com/ao-apps/semanticcms-core-page
 * [Project Home](https://semanticcms.com/core/renderer/servlet/)
 * [Changelog](https://semanticcms.com/core/renderer/servlet/changelog)
 * [API Docs](https://semanticcms.com/core/renderer/servlet/apidocs/)
-* [Maven Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-core-renderer-servlet)
+* [Central Repository](https://central.sonatype.com/artifact/com.semanticcms/semanticcms-core-renderer-servlet)
 * [GitHub](https://github.com/ao-apps/semanticcms-core-renderer-servlet)
 
 ## Contact Us
