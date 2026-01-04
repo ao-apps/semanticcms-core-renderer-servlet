@@ -1,6 +1,6 @@
 /*
  * semanticcms-core-renderer-servlet - Support for SemanticCMS pages rendered in a Servlet environment.
- * Copyright (C) 2018, 2021, 2022, 2024  AO Industries, Inc.
+ * Copyright (C) 2018, 2021, 2022, 2024, 2025, 2026  AO Industries, Inc.
  *     support@aoindustries.com
  *     7262 Bull Pen Cir
  *     Mobile, AL 36695
@@ -24,13 +24,13 @@
 package com.semanticcms.core.renderer.servlet;
 
 import com.semanticcms.core.model.Page;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.jsp.SkipPageException;
 import java.io.IOException;
 import java.io.Writer;
 import java.util.Map;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
-import javax.servlet.jsp.SkipPageException;
 
 /**
  * Renders {@linkplain Page pages} in a Servlet environment.
